@@ -1,0 +1,270 @@
+.Main_page {
+    width: 100%;
+    height: 92.9%;
+    display: flex;
+    overflow: hidden;
+}
+
+.Login_Section {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(365deg, rgba(255, 255, 255, 0.9) 15%, transparent 15.2%), url("./images/starts.jpg");
+}
+
+.Inner_Login_Section {
+    width: 80%;
+    height: auto;
+    color: white;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.Animation_Area {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(365deg, rgba(255, 255, 255, 0.9) 6.25%, transparent 6.6%), url("./images/starts.jpg");
+}
+
+.Animation_inner_area {
+    width: 70%;
+    height: 100%;
+}
+
+.Image_Area {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 4vh;
+    background-color: cadetblue;
+    box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
+}
+
+/* images */
+
+.one {
+    width: 100%;
+    height: 100%;
+    background: url("./images/texture.jpg");
+    background-repeat: no-repeat;
+    animation: spin 3s linear alternate infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: translateX(100%);
+        /* background-position-x: -100%; */
+    }
+}
+
+.earth {
+    background-image: url("./images/earth.jpg");
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20vh;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
+    animation: spin 20s linear alternate infinite;
+}
+
+.background {
+    height: 80vh;
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes spin {
+    100% {
+        background-position: 100%;
+    }
+}
+
+/* header */
+
+.root_h {
+    height: auto;
+    background-image: url("./images/starts.jpg");
+    color: white;
+}
+
+.image_h {
+    display: flex;
+    height: 7vh;
+}
+
+.image_h div {
+    list-style: none;
+    display: flex;
+    margin-top: 0.5vh;
+    font-family: 'Oswald', sans-serif;
+    justify-content: left;
+}
+
+.image_h p {
+    font-size: 3vh;
+    margin-left: -4vh;
+    margin-top: 0.5vh;
+}
+
+.body_h {
+    width: 80%;
+    display: flex;
+    justify-content: left;
+}
+
+.nav_b {
+    width: 33%;
+    list-style: none;
+    display: flex;
+}
+
+.UserS {
+    display: flex;
+    margin-top: 1vh;
+}
+
+.UserS p {
+    font-size: 2vh;
+    color: red;
+}
+
+.Input_Feild {
+    width: 60%;
+    height: 6vh;
+    margin-top: 2vh;
+    padding-left: 1vh;
+}
+
+.LogIn_Btn {
+    width: 60%;
+    height: 6vh;
+    margin-top: 4vh;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Guest_Btn {
+    width: 60%;
+    height: 6vh;
+    margin-top: 2vh;
+    border: none;
+    color: white;
+    background-color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Guest_Btn:hover {
+    background-color: red;
+}
+
+.LogIn_Btn:hover {
+    color: white;
+    background-color: red;
+}
+
+.character_img {
+    width: 30vh;
+    height: 30vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+span {
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 00 20px rgba(255, 255, 255, 1);
+    animation: shooting_star 4s linear infinite;
+}
+
+span::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+}
+
+@keyframes shooting_star {
+    0% {
+        transform: rotate(315deg) translateX(0px);
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(315deg) translateX(-1000px);
+        opacity: 0;
+    }
+}
+
+span:nth-child(1) {
+    top: 4;
+    left: 0;
+    right: initial;
+    animation-duration: 4s;
+    animation-delay: 0.2s;
+}
+
+span:nth-child(2) {
+    top: 0;
+    left: 6;
+    right: initial;
+    animation-duration: 6s;
+    animation-delay: 0.2s;
+}
+
+span:nth-child(3) {
+    top: 6;
+    left: 6;
+    right: initial;
+    animation-duration: 8s;
+    animation-delay: 0.2s;
+}
+
+@media screen and (max-width: 1151px) {
+    .character_img {
+        display: block;
+    }
+    .Main_page {
+        width: 100%;
+        height: 100%;
+    }
+    .Login_Section {
+        width: 100%;
+    }
+    .Inner_Login_Section {
+        width: 100%;
+        height: auto;
+        color: white;
+        text-align: center;
+        margin-top: 15%;
+    }
+    .Animation_Area {
+        display: none;
+    }
+    .character_img {
+        width: 20vh;
+        height: 20vh;
+    }
+}

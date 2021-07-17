@@ -1,0 +1,85 @@
+.logo {
+    width: 8vh;
+    height: 6vh;
+    margin-left: 4vh;
+    margin-right: 4vh;
+}
+
+.image_header {
+    width: 33%;
+}
+
+.image_header div {
+    list-style: none;
+    display: flex;
+    margin-top: 0.5vh;
+    font-family: 'Oswald', sans-serif;
+    justify-content: left;
+}
+
+.image_header p {
+    font-size: 3vh;
+    margin-left: -4vh;
+    margin-top: 0.5vh;
+}
+
+.root_header {
+    display: flex;
+    height: 7vh;
+}
+
+.body_header {
+    width: 80%;
+    display: flex;
+    justify-content: left;
+}
+
+.nav_body {
+    width: 33%;
+    list-style: none;
+    display: flex;
+}
+
+.search_area {
+    width: 40vh;
+    height: 4vh;
+    font-size: 2vh;
+    padding-left: 1vh;
+}
+
+.search_btn {
+    width: 12px;
+    height: 1px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: rgb(192, 189, 189);
+    padding: 2px;
+}
+
+.div_search_bar {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-top: 1vh;
+}
+
+.UserSection {
+    display: flex;
+    margin-top: 1vh;
+}
+
+@media screen and (max-width: 480px) {
+    .header_home {
+        width: 100%;
+    }
+    .body_header {
+        width: 100%;
+        margin-right: 4vh;
+    }
+    .image_header div {
+        display: none;
+    }
+    .UserSection {
+        display: none;
+    }
+}

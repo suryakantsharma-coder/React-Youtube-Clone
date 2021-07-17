@@ -1,0 +1,221 @@
+* {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header_Player {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.body_Player {
+    width: 100%;
+    height: 100%;
+}
+
+.left_child_PLayer {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.right_child_PLayer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.root_related_video {
+    display: flex;
+    justify-content: center;
+}
+
+.YoutubePlayer_PLayer {
+    width: 100%;
+    height: 60vh;
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+}
+
+.youtube_player_alingment {
+    width: 95%;
+    height: 60vh;
+}
+
+.root_comment {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.Comments {
+    width: 100%;
+    height: auto;
+}
+
+.Comments h2 {
+    font-size: 3vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    font-family: 'Oswald', sans-serif;
+}
+
+.comments_section {
+    width: 100%;
+    height: 85vh;
+    overflow-y: auto;
+}
+
+.youtube_player_animation {
+    animation-name: shakeAnim;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: 3;
+}
+
+@keyframes shakeAnim {
+    from {
+        transform: translateY(0vh);
+    }
+    to {
+        transform: translateY(-4vh);
+    }
+}
+
+/* detail section of videos */
+
+.details_Section {
+    width: 80%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 2vh;
+    margin-top: 4vh;
+}
+
+.channel_details {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.titleSection {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+.channle_logo_details_section {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
+
+.channel_details p {
+    margin-top: 2vh;
+    color: black;
+}
+
+/* statistics */
+
+.statistics_section {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
+
+.partitions {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+.partitions p {
+    margin-left: 2vh;
+}
+
+.title_video {
+    font-weight: bold;
+}
+
+.relatedVideo_text {
+    width: auto;
+    height: auto;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.like:hover {
+    color: red;
+}
+
+@media screen and (max-width: 480px) {
+    .Comments {
+        width: 100%;
+        margin: 0%;
+    }
+    .comments_section {
+        width: 100%;
+        margin: 0%;
+    }
+    .header_Player {
+        background-color: red;
+    }
+    .YoutubePlayer_PLayer {
+        width: 100%;
+        height: 35%;
+        margin-top: 0;
+    }
+    .youtube_player_alingment {
+        width: 100%;
+        height: 35vh;
+    }
+    .details_Section {
+        width: 100%;
+        height: auto;
+    }
+    .channel_details {
+        display: none;
+    }
+    .channel_details p {
+        font-size: 1vh;
+    }
+    .titleSection {
+        width: 80%;
+        overflow-x: auto;
+    }
+    .body_Player {
+        width: 100%;
+    }
+    .left_child_PLayer {
+        width: 100%;
+    }
+    .right_child_PLayer {
+        width: 100%;
+    }
+    .relatedVideo_text {
+        width: 100%;
+    }
+    .right_child_PLayer, .root_related_video {
+        width: 100%;
+    }
+}

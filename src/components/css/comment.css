@@ -1,0 +1,42 @@
+.root_Comment {
+    width: 95%;
+    height: auto;
+    display: flex;
+    margin: 2vh;
+    border-radius: 1px;
+    box-shadow: 0.5px 0px 2px 0.5px black;
+    background-color: white;
+}
+
+.user_profile_Comment {
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+.user_data_Comment {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    background-color: white;
+}
+
+.user_profile {
+    width: 6vh;
+    height: auto;
+    margin-top: 1vh;
+    margin-left: 4vh;
+    border-radius: 50%;
+}
+
+.user_profile_Comment p {
+    font-size: 1rem;
+    margin-left: 2.5vh;
+}
+
+.user_data_Comment p {
+    font-size: 1rem;
+    margin-top: 2vh;
+}
+
+@media screen and (max-width: 480px) {}
